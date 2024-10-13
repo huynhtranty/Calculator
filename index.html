@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Bé tập tính</h1>
+
+    <div class="grid-container" id = "main">
+        <div class="item1">Số thứ nhất</div>
+        <div class="item2">
+            <input id = "number1" type="text" onkeydown="handleCalculateKeyDown(event);">
+        </div>
+        <div class="item3">
+            <div id = "operationForm">
+                <input type="radio" id = "add" value="+" name="operation">
+                <label for="add">Cộng</label>
+
+                <input type="radio" id = "sub" value="-" name="operation">
+                <label for="sub">Trừ</label><br><br>   
+                <input type="radio" id = "mul" value="*" name="operation">
+                <label for="mul">Nhân</label>
+
+                <input type="radio" id = "div" value="/" name="operation">
+                <label for="div">Chia</label>
+            </div>
+        </div>  
+        <div class="item4">Số thứ hai</div>
+        <div class="item5">
+            <input id = "number2" type="text" onkeydown="handleCalculateKeyDown(event);">
+        </div>    
+        <div class="item6">Kết quả</div>
+        <div id = "result" class="item7" >
+            <span></span>
+        </div>
+
+        <div class="item8">
+            <button onclick="calculate()">Tính</button>
+        </div>
+
+        <div class="item9">
+            Thông báo
+        </div>
+        <div id = "info" class="item10" >
+        </div>
+        
+    </div>
+            
+    <script src = "main.js"></script>
+</body>
+</html>

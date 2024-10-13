@@ -1,0 +1,65 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 10rem 22rem ;
+    border: 1px solid #f1f1f1;
+    padding-right: 30rem;
+    padding: 10px;
+    }
+
+    .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    font-size: 30px;
+    }
+
+
+    .item10 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        color: red;
+    }
+    .item3{
+        grid-column-start : 3;
+        grid-row-start: 1;
+        grid-row-end : 3;
+        
+    }
+    #number1, #number2 {
+        display: flex;
+        justify-content: flex-start;
+        width: 300px;
+        height: 20px;
+        border: 2px solid rgb(185, 182, 182);
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    #result {
+        width: 300px;
+        height: 20px;
+        border: 2px solid rgb(185, 182, 182);
+        padding: 10px;
+        font-size: 22px;
+        margin-top: 11px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    button {
+        width: 80px;
+        height: 35px;
+        font-size: 18px;
+        border: 2px solid  rgb(185, 182, 182);
+        background-color: #e7e7e7;
+        cursor: pointer;
+    }
+    #div, #mul, #sub, #add {
+        margin-top: 0;
+        height: 35px;
+        width: 20px;
+    }
+    label {
+        font-size: 30px;
+        vertical-align: top;
+    }
